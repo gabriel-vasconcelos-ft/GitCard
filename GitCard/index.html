@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gitCard | Rubens L.</title>
+    <link rel="stylesheet" href="./css/gitcard.css" />
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body class="ready">
+    <header class="hearder-search">
+      <h4 id="titulo">Digite o user do Github abaixo</h4>
+      <input type="text" name="usuario-github" id="usuario-github" />
+      <button
+        onclick="getGitHubInfo(this)"
+        id="editTwitter"
+        type="submit"
+        class="enviar"
+      >
+        Mostrar cartão
+      </button>
+    </header>
+
+    <div class="github-card user-card">
+      <div class="header User"></div>
+      <a class="avatar" href="https://github.com/joseolinda" target="_top"
+        ><img
+          class="image-perfil"
+          src="https://i.pinimg.com/564x/b1/13/e3/b113e39b5949ffd4776b494f1f1b559c.jpg"
+          alt="Foto de perfil"
+      /></a>
+      <div class="content">
+        <h1 id="nameUser">Usuário GitHub</h1>
+        <ul class="status">
+          <li id="repositorio-url">
+            <a
+              id="repositorios-link"
+              target="_top"
+              ><strong id="repositorios">0</strong>Repositórios</a
+            >
+          </li>
+          <li id="seguindo-url">
+            <a id="seguindo-link" target="_top"
+              ><strong id="seguindo">0</strong>Seguindo</a
+            >
+          </li>
+          <li id="seguidores-url">
+            <a id="seguidores-link" target="_top"
+              ><strong id="seguidores">0</strong>Seguidores</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
